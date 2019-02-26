@@ -34,7 +34,7 @@ Add the following activity in your manifest file:
 
 Usage
 -----
-The snippet below showcases launching a Videola call screen using the `demo` client ID that limits all calls to 5 minutes. The snippet uses a token signing endpoint provided by us; you will need your own server-side signing implementation in production. See [SDK Authentication](https://about.gruveo.com/developers/android-sdk/authentication/) for details.
+The snippet below showcases launching a Videola call screen using the `demo` client ID that limits all calls to 5 minutes. The snippet uses a token signing endpoint provided by us; you will need your own server-side signing implementation in production. See [SDK Authentication](https://videola.io/docs/android-sdk/authentication/) for details.
 
 ```
 private val SIGNER_URL = "https://api-demo.gruveo.com/signer"
@@ -42,7 +42,7 @@ private val SIGNER_URL = "https://api-demo.gruveo.com/signer"
 override fun onCreate(savedInstanceState: Bundle?) {
     ...    
     Videola.Builder(this)
-        .callCode("gruveorocks")
+        .callCode("videolarocks")
         .clientId("demo")
         .eventsListener(eventsListener)
         .build()
@@ -68,9 +68,9 @@ private fun signToken(token: String): String {
     
 ```
 
-For more advanced configuration and options, check the <a href="https://github.com/Gruveo/sdk-examples-android-kotlin/blob/master/app/src/main/kotlin/com/gruveo/sdk/kotlin/MainActivity.kt">sample file</a> and the [SDK documentation](https://about.gruveo.com/developers/android-sdk/).
+For more advanced configuration and options, check the <a href="https://github.com/Gruveo/videola-android-sdk-examples/blob/master/app/src/main/kotlin/videola/sample/MainActivity.kt">sample file</a> and the [SDK documentation](https://videola.io/docs/android-sdk/).
 
-To request production API credentials, <a href="https://about.gruveo.com/developers/api-credentials/">get in touch</a>.
+To request production API credentials, <a href="https://videola.io/signup/">get in touch</a>.
 
 Requirements
 ------------
