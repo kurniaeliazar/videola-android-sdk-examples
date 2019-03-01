@@ -42,7 +42,7 @@ private val SIGNER_URL = "https://demo.videola.io/signer"
 override fun onCreate(savedInstanceState: Bundle?) {
     ...    
     Videola.Builder(this)
-        .callCode("videolarocks")
+        .callCode("videolaiorocks")
         .clientId("demo")
         .eventsListener(eventsListener)
         .build()
