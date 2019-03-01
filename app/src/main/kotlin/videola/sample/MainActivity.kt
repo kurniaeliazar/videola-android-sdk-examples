@@ -103,9 +103,6 @@ class MainActivity : AppCompatActivity() {
 
         when (endReason as CallEndReason) {
             CallEndReason.BUSY -> { }
-            CallEndReason.HANDLE_BUSY -> {}
-            CallEndReason.HANDLE_UNREACHABLE -> { }
-            CallEndReason.HANDLE_NONEXIST -> { }
             CallEndReason.FREE_DEMO_ENDED -> { }
             CallEndReason.ROOM_LIMIT_REACHED -> { }
             CallEndReason.NO_CONNECTION -> { }
