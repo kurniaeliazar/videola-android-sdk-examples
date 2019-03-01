@@ -14,7 +14,7 @@ import okhttp3.RequestBody
 
 class MainActivity : AppCompatActivity() {
     private val REQUEST_CALL = 1
-    private val SIGNER_URL = "https://api-demo.gruveo.com/signer"
+    private val SIGNER_URL = "https://demo.videola.io/signer"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
