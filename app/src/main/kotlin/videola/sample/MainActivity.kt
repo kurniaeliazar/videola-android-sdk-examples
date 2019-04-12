@@ -14,7 +14,7 @@ import okhttp3.RequestBody
 
 class MainActivity : AppCompatActivity() {
     private val REQUEST_CALL = 1
-    private val SIGNER_URL = "https://demo.videola.io/signer"
+    private val SIGNER_URL = "YOUR_SIGNER_URL_HERE"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val result = Videola.Builder(this)
                 .callCode(code)
                 .videoCall(videoCall)
-                .clientId("demo")
+                .clientId("YOUR_CLIENT_ID_HERE")
                 .requestCode(REQUEST_CALL)
                 .otherExtras(otherExtras)
                 .eventsListener(eventsListener)
