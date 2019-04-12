@@ -34,16 +34,16 @@ Add the following activity in your manifest file:
 
 Usage
 -----
-The snippet below showcases launching a Videola.io call screen using the `demo` client ID that limits all calls to 5 minutes. The snippet uses a token signing endpoint provided by us; you will need your own server-side signing implementation in production. See [SDK Authentication](https://videola.io/docs/android-sdk/authentication/) for details.
+The snippet below showcases launching a Videola.io call screen. Make sure to replace `YOUR_CLIENT_ID_HERE` and `YOUR_SIGNER_URL_HERE` with your client ID and signer URL, respectively. See [SDK Authentication](https://videola.io/docs/android-sdk/authentication/) for details.
 
 ```
-private val SIGNER_URL = "https://demo.videola.io/signer"
+private val SIGNER_URL = "YOUR_SIGNER_URL_HERE"
 
 override fun onCreate(savedInstanceState: Bundle?) {
     ...    
     Videola.Builder(this)
         .callCode("videolaiorocks")
-        .clientId("demo")
+        .clientId("YOUR_CLIENT_ID_HERE")
         .eventsListener(eventsListener)
         .build()
 }
